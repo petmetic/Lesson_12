@@ -2,8 +2,9 @@ import math
 
 
 def count_steps():
-    # code to change "," to "." goes here
-    num_steps = math.ceil(distance // length_step)
+    length = locale.atof(distance)
+    step = locale.atof(length_step)
+    num_steps = math.ceil(length // step)
     return num_steps
 
 
