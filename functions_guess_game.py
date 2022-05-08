@@ -1,6 +1,6 @@
-import random
-import json
 import datetime
+import json
+import random
 
 
 def play_game():
@@ -31,7 +31,8 @@ def get_score_list():
         score_list = json.loads(score_file.read())
         return score_list
 
+
 def get_top_scores():
     score_list = get_score_list()
-    top_score_list = sorted(score_list, key = lambda k:k['attempts'])[:3]
+    top_score_list = sorted(score_list, key=lambda k: k['attempts'])[:3]
     return top_score_list
